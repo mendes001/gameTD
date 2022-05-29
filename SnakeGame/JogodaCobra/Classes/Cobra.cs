@@ -8,7 +8,7 @@ namespace JogodaCobra.Classes
 {
     class Cobra : DrawableGameComponent
     {
-        int size = 0;
+        int size = 15;
         const int speed = 40;
         int LastUpdate = 0;
         int oldPosX = 0;
@@ -19,7 +19,7 @@ namespace JogodaCobra.Classes
         GraphicsDevice graphics;
 
         public int score { get; set; } = 0;
-        public bool run { get; set; } = true;
+        public bool run { get; set; } = false;
         public int posX { get; set; } = 0;
         public int posY { get; set; } = 0;
         public int dirX { get; set; } = 1;
@@ -90,14 +90,15 @@ namespace JogodaCobra.Classes
             posY = graphics.Viewport.Height / 2;
 
             snakesize.Add(new Rectangle(posX, posY, size, size));
-            run = true;
+            run = false;
+
 
 
         }
 
         public void Addssize()
         {
-            snakesize.Add(new Rectangle(posX, posY, 15, 15));
+            snakesize.Add(new Rectangle(posX, posY, size, size));
         }
 
         public override void Draw(GameTime gameTime)

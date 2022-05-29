@@ -7385,11 +7385,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\35191\\Desktop\\JogodaSnake\\SnakeGame\\JogodaCobra\\JogodaCobra.csproj",
+      "projectUniqueName": "C:\\Users\\35191\\Desktop\\JogodaSnake\\gameTD\\SnakeGame\\JogodaCobra\\JogodaCobra.csproj",
       "projectName": "JogodaCobra",
-      "projectPath": "C:\\Users\\35191\\Desktop\\JogodaSnake\\SnakeGame\\JogodaCobra\\JogodaCobra.csproj",
+      "projectPath": "C:\\Users\\35191\\Desktop\\JogodaSnake\\gameTD\\SnakeGame\\JogodaCobra\\JogodaCobra.csproj",
       "packagesPath": "C:\\Users\\35191\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\35191\\Desktop\\JogodaSnake\\SnakeGame\\JogodaCobra\\obj\\",
+      "outputPath": "C:\\Users\\35191\\Desktop\\JogodaSnake\\gameTD\\SnakeGame\\JogodaCobra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\35191\\AppData\\Roaming\\NuGet\\NuGet.Config",

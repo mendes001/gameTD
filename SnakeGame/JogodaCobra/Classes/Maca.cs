@@ -11,9 +11,9 @@ namespace JogodaCobra.Classes
         SpriteBatch spriteBatch;
         Texture2D pixel;
         //int size;
-        public int posX { get; set; }
-        public bool gerar { get; set; } = false;
-        public int posY { get; set; }
+        public int PosX { get; set; }
+        public bool Gerar { get; set; } = false;
+        public int PosY { get; set; }
         int size;
         public Maca(Game game, SpriteBatch spriteBatch, GraphicsDevice graphics, int size) : base(game)
         {
@@ -26,9 +26,9 @@ namespace JogodaCobra.Classes
         public override void Draw(GameTime gameTime)
         {
             spriteBatch.Begin();
-            if (gerar)
+            if (Gerar)
             {
-                spriteBatch.Draw(pixel, new Rectangle(posX, posY, size, size), Color.Red);
+                spriteBatch.Draw(pixel, new Rectangle(PosX, PosY, size, size), Color.Red);
             }
             spriteBatch.End();
             base.Draw(gameTime);

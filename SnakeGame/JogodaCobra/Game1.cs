@@ -56,17 +56,16 @@ namespace JogodaCobra
 
         public void RandomApple()
         {
-            maca.posX = nr.Next(0, _graphics.GraphicsDevice.Viewport.Width / ssize) * ssize;
-            maca.posY = nr.Next(0, _graphics.GraphicsDevice.Viewport.Height / ssize) * ssize;
-            maca.gerar = true;
+            maca.PosX = nr.Next(0, _graphics.GraphicsDevice.Viewport.Width / ssize) * ssize;
+            maca.PosY = nr.Next(0, _graphics.GraphicsDevice.Viewport.Height / ssize) * ssize;
+            maca.Gerar = true;
         }
         public void MacaCobra()
         {
-            if (cobra.posX == maca.posX && cobra.posY == maca.posY)
+            if (cobra.posX == maca.PosX && cobra.posY == maca.PosY)
             {
                 cobra.score++;
-                //RandomApple();
-                maca.gerar = false;
+                maca.Gerar = false;
                 cobra.Addssize();
             }
         }
@@ -76,15 +75,16 @@ namespace JogodaCobra
         {
             if (Keyboard.GetState().IsKeyDown(Keys.E))
                 Exit();
-            if (!maca.gerar)
+            if (!maca.Gerar)
             {
                 RandomApple();
             }
-            
+
             if ((Keyboard.GetState().IsKeyDown(Keys.Up)))
             {
                 cobra.dirX = 0;
                 cobra.dirY = -1;
+
             }
             else if (Keyboard.GetState().IsKeyDown(Keys.Down))
             {
@@ -105,7 +105,11 @@ namespace JogodaCobra
             {
                 cobra.Reset();
             }
-            
+            else if (Keyboard.GetState().IsKeyDown(Keys.S))
+            {
+                cobra.run = true;
+            }
+
             MacaCobra();
 
             // TODO: Add your update logic here
@@ -119,7 +123,11 @@ namespace JogodaCobra
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            spriteBatch.DrawString(font, "Pontos: " + cobra.score.ToString(), new Vector2(ssize), Color.White);
+            spriteBatch.DrawString(font, "Pontos: " + cobra.score.ToString(), new Vector2(15), Color.White);
+            spriteBatch.DrawString(font, "SNAKE GAME", new Vector2(340,30), Color.White);
+            spriteBatch.DrawString(font, "Press 'R' to restart", new Vector2(670, 430), Color.White);
+            spriteBatch.DrawString(font, "Press 'E' to exit", new Vector2(670, 450), Color.White);
+            spriteBatch.DrawString(font, "Press 'S' to start", new Vector2(670, 410), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
         }

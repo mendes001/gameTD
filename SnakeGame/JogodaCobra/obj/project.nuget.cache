@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZL8HTPdhec0JOuiNXtGp7XPv3U3x7bRtIFquh5tW90lgzikrQPhMNwAEpnhJR6v7c/yvVLh2ghi4rBDNxFBuig==",
+  "dgSpecHash": "NO1+y3dxyxygg5AW3sFPFNt9rHgTLSJZ/4js5xS0cDEfXEy6zbSryP/6X+vDdcuy7j4WVN9iTgP57Yu/E8zf7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\35191\\Desktop\\JogodaSnake\\SnakeGame\\JogodaCobra\\JogodaCobra.csproj",
+  "projectFilePath": "C:\\Users\\35191\\Desktop\\JogodaSnake\\gameTD\\SnakeGame\\JogodaCobra\\JogodaCobra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\35191\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\35191\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
